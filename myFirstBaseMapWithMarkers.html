@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e41a90c75628433d87f396a1172c21de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e41a90c75628433d87f396a1172c21de" ></div>
+        
+</body>
+<script>    
+    
+            var map_e41a90c75628433d87f396a1172c21de = L.map(
+                "map_e41a90c75628433d87f396a1172c21de",
+                {
+                    center: [51.5074, -0.278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9dd7a52b55f14b7b9c449f7dd2f7f19f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e41a90c75628433d87f396a1172c21de);
+        
+    
+            var marker_956c89ad3b084fee97039ded1d124bdc = L.marker(
+                [51.5074, -0.278],
+                {}
+            ).addTo(map_e41a90c75628433d87f396a1172c21de);
+        
+    
+            var icon_5a2cfa8505314d72a0cafd4bb412e64a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-earphone", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_956c89ad3b084fee97039ded1d124bdc.setIcon(icon_5a2cfa8505314d72a0cafd4bb412e64a);
+        
+    
+        var popup_a5cf17cc301c495898545d3e556ce304 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c02288d89354f6eab6cb382752f53d2 = $(`<div id="html_0c02288d89354f6eab6cb382752f53d2" style="width: 100.0%; height: 100.0%;">London marker</div>`)[0];
+            popup_a5cf17cc301c495898545d3e556ce304.setContent(html_0c02288d89354f6eab6cb382752f53d2);
+        
+
+        marker_956c89ad3b084fee97039ded1d124bdc.bindPopup(popup_a5cf17cc301c495898545d3e556ce304)
+        ;
+
+        
+    
+    
+            var circle_a9a5ccd116ff4a6d857920dd04e531fc = L.circle(
+                [51.5074, -0.278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "true", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_e41a90c75628433d87f396a1172c21de);
+        
+    
+        var popup_49684798bc7343df9a5d467acece9a43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75359b1f45c245c2b84c6db4535e2d08 = $(`<div id="html_75359b1f45c245c2b84c6db4535e2d08" style="width: 100.0%; height: 100.0%;">London circle</div>`)[0];
+            popup_49684798bc7343df9a5d467acece9a43.setContent(html_75359b1f45c245c2b84c6db4535e2d08);
+        
+
+        circle_a9a5ccd116ff4a6d857920dd04e531fc.bindPopup(popup_49684798bc7343df9a5d467acece9a43)
+        ;
+
+        
+    
+    
+            circle_a9a5ccd116ff4a6d857920dd04e531fc.bindTooltip(
+                `<div>
+                     I'm a tooltip
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b58189eb1436470daf4c3a466bebbceb = L.circleMarker(
+                [51.5074, -0.278],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": "true", "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_e41a90c75628433d87f396a1172c21de);
+        
+    
+        var popup_77abc738c70540a191562de0ff351526 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57f6f13b31924a05a5fc639f3d079174 = $(`<div id="html_57f6f13b31924a05a5fc639f3d079174" style="width: 100.0%; height: 100.0%;">London circle Marker</div>`)[0];
+            popup_77abc738c70540a191562de0ff351526.setContent(html_57f6f13b31924a05a5fc639f3d079174);
+        
+
+        circle_marker_b58189eb1436470daf4c3a466bebbceb.bindPopup(popup_77abc738c70540a191562de0ff351526)
+        ;
+
+        
+    
+    
+            circle_marker_b58189eb1436470daf4c3a466bebbceb.bindTooltip(
+                `<div>
+                     I'm a tooltip
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
